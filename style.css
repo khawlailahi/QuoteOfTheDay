@@ -31,6 +31,10 @@ body {
     height: 50px;
     padding: 10px;
     width:50px;
+    filter: opacity(0.85);
+}
+.nav img.rotate{
+    transform: rotate(180deg);
 }
 .outer-wrapper{
     width: 100%;
