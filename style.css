@@ -256,10 +256,17 @@ button.loading{
 @media only screen and (max-width: 767px) {
     .wrapper{
         width: 90%;
+        margin-bottom: 100px;
+    }
+    .quote-area .quote{
+        font-size: 20px;  
+    }
+    .content .author{
+        font-size: 15px;
     }
     .features button{
-        font-size: 13px;
-        padding: 13px 15px;
+        font-size: 11px;
+        padding: 10px 8px;
     }
     .title{
         top:20px;
