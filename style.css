@@ -13,29 +13,47 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.nav {
-    display: flex;
-    justify-content: space-between;
+.logo-wrapper{
+    position: relative;
+    width: 400px;
+    height:180px;
+}
+.logo-img{
     width:100%;
-    background-color: #fff;
-    height: 60px;
-    text-align: center;    
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    height:100%;
 }
-.nav h2 {
-    padding-top:15px;
-    color: #3c8dbd;
+.logo-wrapper .text{
+    color: #fff;
+    font-size: 1.9rem;
     font-family: 'Coiny', sans-serif;
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    -webkit-text-stroke: 2px 	rgba(83, 114, 240, 0.2);
+    text-shadow: 2px 2px rgba(19, 24, 44, 0.2);
 }
-.nav img{
-    height: 50px;
-    padding: 10px;
-    width:50px;
-    filter: opacity(0.85);
+.logo-wrapper .text i{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
 }
-.nav img.rotate{
-    transform: rotate(180deg);
+.logo-wrapper .text i:first-child{
+    margin: 0px 5px 0px 0;
+    top:-7px;
 }
+.logo-wrapper .text i:last-child{
+    margin: 0px 5px 0px 0;
+    top:7px;
+}
+.header-wrapper {
+    width: 100%;
+    display: flex ;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+
 .outer-wrapper{
     width: 100%;
     display: flex ;
@@ -43,7 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     row-gap: 50px;
-    min-height: 90vh;
+    min-height: 60vh;
 }
 .title {
     width: 100%;
@@ -167,8 +185,9 @@ button.loading{
 	animation-fill-mode: forwards;
 	animation-play-state: running;
 	animation-timing-function: linear;
-	text-align: center;
-    -webkit-text-stroke: 0.1px 	rgba(83, 114, 240, 0.2);
+	
+    -webkit-text-stroke: 0.5px 	rgba(83, 114, 240, 0.2);
+    text-shadow: 2px 2px rgba(77, 96, 172, 0.2);
    
 }
 @keyframes clouds-moving {
@@ -276,7 +295,18 @@ button.loading{
     animation-delay: .3s;
 }
 
-
+@media only screen and (max-width: 903px) {
+    .logo-wrapper{
+        position: relative;
+        width: 400px;
+        height:180px;
+    }
+    .logo-wrapper .text{ 
+        font-size: 28px;
+        top: 33%;
+        left: 34%;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .wrapper{
@@ -297,6 +327,7 @@ button.loading{
         top:20px;
     }
     .cloud-text {
+        text-align: center;
         margin: 2px;
         font-size: 2.5rem; 
         width: 90%;
@@ -306,4 +337,19 @@ button.loading{
     .attribute {
         font-size: 2rem;
     }
+    .header-wrapper {
+        flex-direction: column; 
+        align-items: start;
+
+    }
+    .logo-wrapper{
+        width: 250px;
+        height:140px;
+    }
+    .logo-wrapper .text{
+        font-size: 25px;
+        top: 33%;
+        left: 34%;
+    }
 }
+
