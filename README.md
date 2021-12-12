@@ -1,2 +1,2 @@
 # QuoteOfTheDay
-Random Quote generator website
+Random Quote Generator Website 
