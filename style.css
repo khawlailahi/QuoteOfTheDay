@@ -187,7 +187,7 @@ button.loading{
 	animation-play-state: running;
 	animation-timing-function: linear;
 	
-    -webkit-text-stroke: 0.5px 	rgba(83, 114, 240, 0.2);
+    -webkit-text-stroke: 0.5px 	rgba(181, 190, 226, 0.2);
     text-shadow: 2px 2px rgba(77, 96, 172, 0.2);
    
 }
@@ -332,6 +332,8 @@ button.loading{
         margin-bottom: 30px;
         font-size: 2.5rem; 
         line-height: 50px;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 0.5px 	rgba(56, 65, 102, 0.2);
         animation: clouds-moving infinite 80s;
     }
     .attribute {
