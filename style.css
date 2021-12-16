@@ -9,7 +9,7 @@
     font-weight: 600;
 }
 body {
-    background-image: url(./wallpaper.jpg) ;
+    background-image: url(./images/wallpaper.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -174,7 +174,7 @@ button.loading{
 	font-family: 'Anton', cursive;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;	
-	background-image: url(./text-cover.jpg);
+	background-image: url(./images/text-cover.jpg);
 	background-size: auto;
 	background-attachment: unset;
 	background-position: 10%;

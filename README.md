@@ -9,9 +9,9 @@
 
 
  ## overview :
- <img src= "mobile.gif" width = "900" >
+ <img src= "/images/mobile.gif" width = "900" >
  
-<img src= "desktop.gif" width = "1000" >
+<img src= "/images/desktop.gif" width = "1000" >
 ## Link : 🔗🖥️
 https://quoteey.netlify.app/
  
